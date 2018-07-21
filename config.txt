@@ -1,0 +1,10 @@
+screenWidth 1280
+screenHeight 820
+framerate 30
+bounds 10000
+maxMass 5e7
+dt 0.01
+gravConst 6.67e-2
+programName n-body
+collisionType 3
+GUI 1
