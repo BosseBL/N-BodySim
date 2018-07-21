@@ -76,4 +76,10 @@ Programming Tasks:
     Safety = Nothing bad ever happens
     liveliness = Something good eventually happens
     (lec 3)
+
+-   At small distances and high speed the simulation becomes very inacurate resulting in
+    funny slingshots. A improvement would be if the simulated time and frame time were separated so that
+    simulation of the physics could be done at smaller time intervalls for bodies that are undergoing a high
+    change in velocity and/or acceleration. This could be done by first defining the dt for every frame,
+    and then define specific sub-dt to be simulated for each body.
     
