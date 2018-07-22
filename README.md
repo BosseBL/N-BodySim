@@ -7,8 +7,14 @@ This program was written as a part of a university asignment in concurrent progr
 Building project:
 -----------------
 A makefile is suplied wich is known to work under linux.
-Compiling with only *$ make* will exclude the graphical part from the program.
-To compile the graphical part, use *$ make gui=1*. SFML meeds to be installed on the system for this.
+Compiling with only 
+    
+    $ make 
+will exclude the graphical part from the program.
+To compile the graphical part, use 
+
+    $ make gui=1. 
+SFML meeds to be installed on the system for this.
 To compile without the makefile, use:
 
     g++ -I. -std=c++11 -fopenmp -D _GUI -c main.cpp physics.cpp physics.h graphics.cpp graphics.h sandbox.cpp sandbox.h
