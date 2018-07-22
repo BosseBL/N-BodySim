@@ -2,7 +2,17 @@
 
 Description:
 ------------
-This program was written as a part of a university asignment in concurrent programming. It simulates gravity in a N-body system and visualise this using the SFML library. The task was to improve the efficiency of this simulation by using Barnes Hut algoritm and multi-threading.
+This program was written as a part of a university asignment in concurrent programming. It simulates gravity in a N-body system and visualise this using the SFML library. The task was to improve the efficiency of this simulation by using Barnes Hut algoritm and multi-threading using openmp.
+
+Building project:
+-----------------
+A makefile is suplied wich is known to work under linux.
+Compiling with only *$ make* will exclude the graphical part from the program.
+To compile the graphical part, use *$ make gui=1*. SFML meeds to be installed on the system for this.
+To compile without the makefile, use:
+    g++ -I. -std=c++11 -fopenmp -D _GUI -c main.cpp physics.cpp physics.h graphics.cpp graphics.h sandbox.cpp sandbox.h
+    g++ -I. -std=c++11 -fopenmp -D _GUI main.o graphics.o physics.o sandbox.o -o nbody -lsfml-graphics -lsfml-system -lsfml-window -lm
+    
 
 GUI keybindings:
 -----------------
