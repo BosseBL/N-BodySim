@@ -12,8 +12,8 @@ T - toogle tree view on/off. Only woorks when Barnes Hut is used.
 
 config.txt parameters:
 ----------------------
-screenWitdth:   sets the screen resolution width
-screenHeight:   sets the screen resolution height
+    screenWitdth:   sets the screen resolution width
+    screenHeight:   sets the screen resolution height
 framerate:      sets the framerate limit
 bounds:         sets the size of the starting area for all the bodies
 maxMass:        sets the max limit for body mass. can be both scientific notation or decimal (ie. 3.2E3 or 3200.0)
