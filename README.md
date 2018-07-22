@@ -14,23 +14,23 @@ config.txt parameters:
 ----------------------
     screenWitdth:   sets the screen resolution width
     screenHeight:   sets the screen resolution height
-framerate:      sets the framerate limit
-bounds:         sets the size of the starting area for all the bodies
-maxMass:        sets the max limit for body mass. can be both scientific notation or decimal (ie. 3.2E3 or 3200.0)
-dt:             sets the simulated time of every frame. large dt will result in lower accuracy and faster simulation
-gravConst:      sets the simulations universal constant of gravity G.
-programName:    The text in the top of the screen
-collisionType:  1 = elastic (bodies bounces of each other), 2 = inelastic (bodies merges), 0 = none (ghost bodies)
-GUI:            1 if GUI is to be used, 0 if no GUI
+    framerate:      sets the framerate limit
+    bounds:         sets the size of the starting area for all the bodies
+    maxMass:        sets the max limit for body mass. can be both scientific notation or decimal (ie. 3.2E3 or 3200.0)
+    dt:             sets the simulated time of every frame. large dt will result in lower accuracy and faster simulation
+    gravConst:      sets the simulations universal constant of gravity G.
+    programName:    The text in the top of the screen
+    collisionType:  1 = elastic (bodies bounces of each other), 2 = inelastic (bodies merges), 0 = none (ghost bodies)
+    GUI:            1 if GUI is to be used, 0 if no GUI
 
 
 terminal launch parameters:
 ----------------------------
 ./nbody [gnumBodies] [numSteps] [theta] [numWorkers]
 
-uint gnumBodies:    The number of boides to simulate. default = 50
-uint numSteps:      Number of iterations before automatic quit. default = 0xFFFFFFFF
-float theta:        >= 1.0 sets the simulation to naive algoritm. < 1.0 uses 
+    uint gnumBodies:    The number of boides to simulate. default = 50
+    uint numSteps:      Number of iterations before automatic quit. default = 0xFFFFFFFF
+    float theta:        >= 1.0 sets the simulation to naive algoritm. < 1.0 uses 
                     Barnes Hut algoritm. if theta > nodeSize/distance is true
                     for a specific note and a specific body, the force acting on that
                     body will be calculated with the nodes total mass and center of
@@ -38,14 +38,14 @@ float theta:        >= 1.0 sets the simulation to naive algoritm. < 1.0 uses
                     distance is the distance between the nodes center of mass and
                     a body. The lower theta is, the more accurate the simulation. 
                     default = 1
-numWorkers:         threads/processes/level of parallellisation that will be used
+    numWorkers:         threads/processes/level of parallellisation that will be used
                     to update the bodies positions.
 
 
 
 Terminal controll:
 -----------------------------
-ctrl-c (sigint):    exits the simulation gracefully
+    ctrl-c (sigint):    exits the simulation gracefully
 
 
 
