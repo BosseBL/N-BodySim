@@ -1,6 +1,8 @@
 # N-BodySim
 
-
+Description:
+------------
+This program was written as a part of a university asignment in concurrent programming. It simulates gravity in a N-body system and visualise this using the SFML library. The task was to improve the efficiency of this simulation by using Barnes Hut algoritm and multi-threading.
 
 GUI keybindings:
 -----------------
